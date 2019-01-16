@@ -1,0 +1,4 @@
+Win10 始终以管理员打开命令行：
+    Start -> Right Click -> More -> Open file location -> Right Click -> Properties -> Advanced -> Run as administrator 
+    In this folder:
+    C:\Users\Aaron Swartz\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools
