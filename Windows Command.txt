@@ -50,7 +50,7 @@ msconfig 打开系统配置
 hostname 查看电脑名
 mstsc 远程桌面
 
-
+netstat -n|find "ESTABLISHED"
 
 
 
