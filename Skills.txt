@@ -13,10 +13,20 @@ conda 代理设置：修改 .condarc 文件  C:\Users\Aaron Swartz\.condarc
         http: http://localhost:1080
         
 pip 代理设置：
-    pip --proxy http://localhost.1080 PACKAGE_NAME
+    pip --proxy http://localhost:1080 install PACKAGE_NAME
     
 pip install -r requirements.txt  pip通过文件安装包
 pip install PACKAGE_NAME.tar.gz pip通过压缩文件安装包
+
+pip设置下载源：
+    临时：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+    默认：
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+用youtube-dl 下载YouTube视频：
+youtube-dl --proxy http://127.0.0.1:1080 --yes-palylist URL
+
 
 
     
