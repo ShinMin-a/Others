@@ -1,8 +1,6 @@
-netsh wlan show profiles
-查看当前系统已经保存的网络
+netsh wlan show profiles 查看当前系统已经保存的网络
 
-netsh wlan show profile name="KDJL_2.4G" key=clear
-查看指定WIFI的密码
+netsh wlan show profile name="KDJL_2.4G" key=clear 查看指定WIFI的密码
 
 arp -a 
 arp -s 192.168.31.1 MacAddress

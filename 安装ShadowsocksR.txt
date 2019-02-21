@@ -1,0 +1,24 @@
+安装ShdowsocksR:
+    https://teddysun.com/486.html
+
+    wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+
+    chmod +x shadowsocks-all.sh
+
+    ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+    
+    /etc/init.d/shadowsocks-r start | stop | restart | status
+
+    /etc/shadowsocks-r/config.json
+
+
+开启BBR:
+    https://www.xtkyy.cc/2035.html
+        
+    1、sudo -i
+
+    2、wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
+
+    安装后，执行uname -r，显示4.14.90则切换内核成功
+    
+    执行lsmod | grep bbr，显示有bbrplus则开启成功
