@@ -8,9 +8,9 @@ Vmware安装后，没有VMnet0
 
 下面是VMware虚拟网卡的说明：
 网络类型         网络适配器名
-Bridged           VMnet0
-NAT                  VMnet8
-Host-only        VMnet1
+Bridged        VMnet0
+NAT            VMnet8
+Host-only      VMnet1
 
 以Windows7为例，【控制面板\网络和 Internet\网络连接】右键点击“本地连接”，
 

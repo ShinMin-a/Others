@@ -1,0 +1,14 @@
+vi /etc/ssh/sshd_config 
+
+修改为22222
+
+iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 22222 -j ACCEPT 
+
+iptables-save
+
+iptables -nL --line-number
+
+systemctl restart sshd.service
+
+
+
