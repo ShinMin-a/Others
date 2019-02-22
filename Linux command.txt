@@ -1,0 +1,5 @@
+netstat -natpl 显示TCP的侦听端口
+
+netstat -naupl 显示UDP的侦听端口
+
+
