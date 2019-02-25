@@ -2,4 +2,74 @@ netstat -natpl 显示TCP的侦听端口
 
 netstat -naupl 显示UDP的侦听端口
 
+vim没有反应，无法输入:
+	按到了Ctrl+S,导致停止向终端输出，Ctrl+Q恢复
+
+centos:
+	reboot
+	poweroff
+	
+	netstat 安装：
+		yum install net-tools
+	
+	查看本机DNS：
+		cat /etc/resolv.conf
+		vi /etc/resolv.conf 编辑 nameserver 1.1.1.1
+		
+	网络设置：
+		ip addr 查看网卡名称，如ens33、ens32
+		cd /etc/sysconfig/network-scripts 然后 ls 查看文件
+		vi ifcfg-ens33 
+		BOOTPROT=dhcp 动态ip
+		NETMASK=255.255.255.0 
+		GATEWAY=192.168.10.1 网关
+		ONBOOT=yes 开机启动
+		
+		dhclient ens33 获取动态IP地址
+		
+			如果是静态IP的话：
+				BOOTPROT=static
+				再加上：
+					IPADDR=192.168.10.XXX
+		
+		配置DNS服务器：
+			vi /etc/resolv.conf
+			nameserver 1.1.1.1
+			nameserver 8.8.8.8
+		进行网络相关的更改后记得 重启网络服务
+		
+		但是这里配置的DNS服务器会被覆盖
+		
+		Centos DNS服务器被覆盖解决办法： 
+			https://blog.csdn.net/typa01_kk/article/details/49155949		
+			vi /etc/sysconfig/network-scripts/ifcfg-ens33
+			在上面进行网络设置时加入：
+				DNS1=1.1.1.1
+				DNS2=8.8.8.8
+			这样 /etc/resolv.conf 文件就会自动用ens33中添加的DNS服务器
+			
+			另外一种解决办法是在NetworkManager.conf中加入dns=none,没试过。		
+		
+	重启网络服务：
+		/etc/init.d/network restart
+		service network restart
+		systemctl restart network
+	
+	Centos 7+防火墙：
+		firewall-cmd --list-ports 查看开放的端口
+		firewall-cmd --zone=public --add-port=80/tcp --permanent 开放端口
+		firewall-cmd --reload 防火墙更改记得重启防火墙
+		systemctl stop firewalld.service 停止防火墙，开启就是start
+		firewall-cmd --zone=public --remove-port=80/tcp --permanent 关闭端口
+		firewall-cmd --state 查看防火墙状态
+	
+	更改默认的SSH端口号：
+		vi /etc/ssh/sshd_config
+		Port 1984
+		/etc/init.d/sshd restart 重启SSH服务，或者 service sshd restart
+		需不需要开放防火墙相应的端口呢？？？
+		
+		
+		
+		
 
