@@ -65,11 +65,12 @@ centos:
 	
 	更改默认的SSH端口号：
 		vi /etc/ssh/sshd_config
+		#Port 22 这行可删除
 		Port 1984
 		/etc/init.d/sshd restart 重启SSH服务，或者 service sshd restart
 		需不需要开放防火墙相应的端口呢？？？
 		
-		
+	who 查看用户
 		
 		
 
