@@ -1,6 +1,11 @@
+启动MySQL
+	运行 -> services.msc -> 找到 MySQL 服务 -> 启动，可设置为自动启动
+
+创建数据库
 create database zoo;
 
 
+创建table
 CREATE TABLE student(
     student_id INT PRIMARY KEY,
     name VARCHAR(20),
@@ -8,8 +13,47 @@ CREATE TABLE student(
    #PRIMARY KEY(student_id)
 );
 
-DESCRIBE student;
+展示table有哪些属性
+DESCRIBE student; 
 
-DROP TABLE student;
+删除table
+DROP TABLE student; 
+
+添加属性
+ALTER TABLE student ADD gpa DECIMAL(3,2);
+
+删除属性
+ALTER TABLE student DROP COLUMN gpa;
+
+插入数据
+INSERT INTO student VALUES(1, 'Jack', 'Biology');
+
+删除数据
+DELETE FROM student WHERE student_id=3;
+
+给特定属性插入数据
+INSERT INTO student(student_id, name) VALUES(3, 'Claire');
+
+展示所选数据
+SELECT * FROM student;
+
+在不删除表的情况下删除所有的行。这意味着表的结构、属性和索引都是完整的
+DELETE FROM table_name;
+DELETE * FROM table_name;
+
+给属性一些限定，primary key 都是NOT NULL and UNIQUE
+name VARCHAR(20) NOT NULL,
+major VARCHAR(20) UNIQUE,
+
+给属性设置默认值，当没有给值时
+major VARCHAR(20) DEFAULT 'undecided',
+
+数字自增，这样插入数据就不用指定这个属性了
+student_id INT AUTO_INCREMENT,
+
+
+
+
+
 
 
