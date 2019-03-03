@@ -1,0 +1,38 @@
+Google Cloud 用Xshell通过SSH连接到VM实例的办法：
+	https://blog.csdn.net/c__chao/article/details/79785601
+	http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+	
+
+	如果电脑上有用过Github，那么在用户目录里应该有文件夹：.ssh
+		C:\Users\Administrator\.ssh
+		id_rsa 是私钥，自己留着
+		id_rsa.pub 是公钥，给别人的
+	没有的话，Xshell工具选项卡 -> 新建用户密钥生成向导
+	也可自行Google其它生成ssh密钥方法
+	
+	Xshell：
+		新建会话 -> 主机端口号什么的填上 -> 用户身份验证 
+		-> 方法选择 Public Key 公钥 -> 用户名随便填：root，后面要用
+		-> 用户密钥选择 id_rsa 私钥 -> 确定
+	
+	Google Cloud：
+		VM实例 -> 编辑创建的VM实例 -> 拉到最下面，添加SSH公钥
+		-> 复制你前面 id_rsa.pub 中的内容，密钥后面的登录名改为前面
+		在Xshell中填的那个用户名 -> 保存(Google Cloud会自动重启ssh服务)
+		
+		最后一步：修改SSH配置文件
+			vi /etc/ssh/sshd_config
+			PermitRootLogin yes
+			PasswordAuthentication yes
+			service sshd restart 重启ssh服务 
+		
+	其它：
+		切换到root： sudo -i
+		
+			
+	完
+	
+	
+	
+	
+	

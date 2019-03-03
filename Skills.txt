@@ -25,13 +25,27 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 用youtube-dl 下载YouTube视频：
+<<<<<<< HEAD
 youtube-dl --proxy http://127.0.0.1:1080 --yes-playlist "URL"
 
 cmd命令行关闭/开启路径：echo on/off
 
 重启显卡驱动程序 Win+Ctrl+Shift+B
 
+=======
+youtube-dl --proxy http://127.0.0.1:1080 --yes-palylist URL
+youtube-dl URL
 
+cmd命令行关闭/开启路径：echo on/off
+
+取消共享user文件夹：
+	计算机--管理--共享文件夹--共享--user--停止共享
+>>>>>>> 0a1fda0d26355647a1baa361cc61fe2793db385b
+
+不能访问别人共享的文件夹，共享文件夹没有访问权限：	
+	右键共享文件夹--属性--安全--组或用户名--编辑--添加-下面框中输入guest--确定
+	
+	
 
 
 
