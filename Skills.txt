@@ -25,9 +25,11 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 用youtube-dl 下载YouTube视频：
-youtube-dl --proxy http://127.0.0.1:1080 --yes-palylist URL
+youtube-dl --proxy http://127.0.0.1:1080 --yes-playlist "URL"
 
 cmd命令行关闭/开启路径：echo on/off
+
+重启显卡驱动程序 Win+Ctrl+Shift+B
 
 
 
