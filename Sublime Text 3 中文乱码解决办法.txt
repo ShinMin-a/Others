@@ -1,0 +1,5 @@
+Sublime Text 3 中文乱码解决办法：
+	https://blog.csdn.net/qq_22260641/article/details/70666960
+	
+	安装插件：ConvertToUTF8 就可以了
+		
