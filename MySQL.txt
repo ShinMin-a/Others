@@ -2,8 +2,7 @@
 	运行 -> services.msc -> 找到 MySQL 服务 -> 启动，可设置为自动启动
 
 创建数据库
-create database zoo;
-
+CREATE DATABASE zoo;
 
 创建table
 CREATE TABLE student(
