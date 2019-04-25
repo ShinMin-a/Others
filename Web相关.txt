@@ -11,5 +11,5 @@ Telnet 模拟HTTP请求：
 	HOST:www.baidu.com
 	连续两次回车
 	
-	
+
 

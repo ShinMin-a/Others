@@ -1,0 +1,5 @@
+printf("%d\n", a);
+cout << a;
+cin >> b;
+
+
