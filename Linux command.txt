@@ -4,12 +4,15 @@ netstat -naupl 显示UDP的侦听端口
 
 vim没有反应，无法输入:
 	按到了Ctrl+S,导致停止向终端输出，Ctrl+Q恢复
+	
+安装pip3：
+	sudo apt-get -y install python3-pip
 
 centos:
 	reboot
 	poweroff
 	
-	netstat 安装：
+	netstat 安装：（解决没有ifconfig的问题）
 		yum install net-tools
 	
 	查看本机DNS：
@@ -82,7 +85,7 @@ centos:
 		yum -y install wget
 		
 	Centos使用源码方式安装Python 3.7：
-		https://www.centos.bz/2018/07/centos-7-%E5%AE%89%E8%A3%85-python-3-7/
+		wget https://www.centos.bz/2018/07/centos-7-%E5%AE%89%E8%A3%85-python-3-7/
 		sudo yum groupinstall "Development tools"
 		sudo yum -y install zlib zlib-devel
 		sudo yum -y install libffi-devel
@@ -92,7 +95,21 @@ centos:
 		sudo ./configure
 		sudo make
 		sudo make install
+	
+	
+	Centos 错误：Cannot find a valid baseurl for repo: base	
+		https://unix.stackexchange.com/questions/22924/how-can-i-fix-cannot-find-a-valid-baseurl-for-repo-errors-on-centos
+		sudo dhclient
 		
+	Centos 删除文件（夹）：
+		 rm /home/test
+		 
+	更改默认Python版本：
+		https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
+		alias python=python3
+		
+
+
 		
 	
 	
