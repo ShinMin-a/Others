@@ -22,3 +22,14 @@
     安装后，执行uname -r，显示4.14.90则切换内核成功
     
     执行lsmod | grep bbr，显示有bbrplus则开启成功
+    
+    
+2019.5.11
+    104.196.246.17
+    Y%=+6m$&qU@TN-72Hx*W[
+    16913
+    
+    Ellisha Hulme
+    ST@PiNi!0?7=tHoroQEs?
+
+    
