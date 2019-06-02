@@ -50,5 +50,7 @@ mstsc 远程桌面
 
 netstat -n|find "ESTABLISHED"
 
+java -version
+
 
 

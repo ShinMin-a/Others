@@ -1,0 +1,15 @@
+curl baidu.com 返回HTML页面
+curl baidu.com -I 返回HTTP响应头
+
+HTTP是无状态协议
+
+Telnet 模拟HTTP请求：
+	Telnet www.baidu.com 80
+	Ctrl + ]
+	回车
+	GET /index.html HTTP/1.1
+	HOST:www.baidu.com
+	连续两次回车
+	
+
+
