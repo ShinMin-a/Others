@@ -1,0 +1,10 @@
+https://www.computerhope.com/issues/ch001647.htm
+
+末尾添加：
+PATH=$PATH:/my/new/path
+
+头部添加：
+PATH=/my/new/path:$PATH
+
+查看：
+echo $PATH
