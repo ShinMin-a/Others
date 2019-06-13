@@ -19,11 +19,14 @@ Google Cloud 用Xshell通过SSH连接到VM实例的办法：
 		VM实例 -> 编辑创建的VM实例 -> 拉到最下面，添加SSH公钥
 		-> 复制你前面 id_rsa.pub 中的内容，密钥后面的登录名改为前面
 		在Xshell中填的那个用户名 -> 保存(Google Cloud会自动重启ssh服务)
-		
-		最后一步：修改SSH配置文件
+
+
+		如果要修改默认的SSH端口号22，先开放另外一个测试看能不能用，然后再关闭22		
+		最后一步：修改SSH配置文件（前面可能要加上sudo）
 			vi /etc/ssh/sshd_config
 			PermitRootLogin yes
 			PasswordAuthentication yes
+			sudo cat sshd_config 查看配置情况
 			service sshd restart 重启ssh服务 
 		
 	其它：
