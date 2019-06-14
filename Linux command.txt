@@ -107,6 +107,11 @@ centos:
 	更改默认Python版本：
 		https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
 		alias python=python3
+
+	
+	查看当前系统版本：
+		uname -a
+
 		
 
 
