@@ -31,9 +31,15 @@ Google Cloud 用Xshell通过SSH连接到VM实例的办法：
 		
 	其它：
 		切换到root： sudo -i
-		
+	设置密码（linux 终端 ssh登录要使用）：
+		passwd
+	
+	Linux 终端ssh登录:
+		ssh user_name@ip_address		
 			
 	完
+
+	
 	
 	
 	
