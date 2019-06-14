@@ -1,0 +1,13 @@
+https://ibcomputing.com/install-wifi-driver-broadcom-bcm43142-linux/
+
+Debian系，Ubuntu、Kali
+
+查看无线网卡型号：
+lspci -nn | grep -i network
+
+我的是BCM43142，很棒棒，可以跟着走
+
+apt-get update （为什么？）
+apt-get install broadcom-sta-dkms
+
+结束，有些教程看起来怎么那么复杂。
