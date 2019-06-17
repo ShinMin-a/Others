@@ -112,7 +112,18 @@ centos:
 	查看当前系统版本：
 		uname -a
 
-		
+
+	安装缺失的东西：
+		apt-get install --fix-broken
+
+	删除多余的东西：
+		apt-get autoremove
+
+	安装deb软件：
+		dpkg -i xxx
+
+
+
 
 
 		
