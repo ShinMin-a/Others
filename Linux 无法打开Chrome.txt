@@ -1,0 +1,5 @@
+https://blog.csdn.net/qq_20881087/article/details/85259403
+
+在usr/bin 目录下搜索chrome,编辑google-chrome文件：
+	在最后一行末尾添加:
+		" --no-sandbox"

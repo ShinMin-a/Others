@@ -109,10 +109,19 @@ centos:
 		https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
 		alias python=python3
 
+	
+	查看当前系统版本：
+		uname -a
 
-Kali安装缺失的东西：
-	apt --fix-broken install
-		
+
+	安装缺失的东西：
+		apt-get install --fix-broken
+
+	删除多余的东西：
+		apt-get autoremove
+
+	安装deb软件：
+		dpkg -i xxx
 
 
 		
