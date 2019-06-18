@@ -56,6 +56,7 @@ centos:
 	重启网络服务：
 		/etc/init.d/network restart
 		service network restart
+		service network-manager restart
 		systemctl restart network
 	
 	Centos 7+防火墙：
@@ -107,6 +108,10 @@ centos:
 	更改默认Python版本：
 		https://askubuntu.com/questions/320996/how-to-make-python-program-command-execute-python-3
 		alias python=python3
+
+
+Kali安装缺失的东西：
+	apt --fix-broken install
 		
 
 
