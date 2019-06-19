@@ -8,7 +8,7 @@ mv ssr /usr/local/bin
 chmod 766 /usr/local/bin/ssr
 ssr install
 ssr config
-ssr start
+ssr start | stop | restart
 
 apt install -y privoxy
 
