@@ -124,6 +124,9 @@ centos:
 		dpkg -i xxx
 
 
+检查和安装更新：
+	apt-get update && apt-get upgrade
+
 		
 	
 	
