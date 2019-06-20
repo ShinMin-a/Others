@@ -127,7 +127,58 @@ centos:
 检查和安装更新：
 	apt-get update && apt-get upgrade
 
-		
+显示设备最近的变化情况：
+	dmesg
+
+将镜像刻录到U盘：
+	dd if=FILE_NAME of=DEVICE_NAME bs=1M【可选，块的大小】
+		if = input file
+		of = output file
+
+分区工具：
+	parted
+		print devices
+		select /dev/sdb
+		print
+		mkpart primary 3063 7063 【起始位置】
+		quit
+
+ls -l
+ls -a 可查看隐藏文件
+ls -lh --sort=size 按大小排序
+ls -lh --sort=time 时间
+cd 进入～目录，用户主目录
+cd . 当强目录
+cd .. 当前目录的上一个目录
+
+cat /var/log/messages
+more /var/log/messages
+less /var/log/messages
+tail /var/log/messages 默认最后十行
+tail -20 /var/log/messages 最后二十行
+watch -n 2 tail /var/log/messages 每隔2秒刷新一次
+
+文件删除、复制
+	rm xx.txt
+	cp x.txt x1.txt
+目录删除、复制
+	cp -r old new
+	rm -r old
+
+top 当前系统信息
+	k 输入进程号杀掉进程 q退出
+
+ps 显示进程信息
+ps -ef 详细的
+
+grep ssh /etc/passwd 筛选输出信息
+
+ifconfig eth0 down/up
+macchanger -m 00:00:00:00:00:10 eth0
+
+netstat
+netstat -pantu
+netstat -pantu | egrep -v '0.0.0.0|:::|127.0.0.1' | awk '{print $5}' | egrep -v 'and|Address' | cut -d ':' -f 1 | sort | uniq > ip.txt
 	
 	
 		
