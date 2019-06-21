@@ -179,6 +179,23 @@ macchanger -m 00:00:00:00:00:10 eth0
 netstat
 netstat -pantu
 netstat -pantu | egrep -v '0.0.0.0|:::|127.0.0.1' | awk '{print $5}' | egrep -v 'and|Address' | cut -d ':' -f 1 | sort | uniq > ip.txt
+> 覆盖
+>>追加
+
+find / -name nmap 从根目录开始查找
+find / -iname nmap 区分大小写
+
+whereis nmap
+
+vi 使用：
+	dd 删除当前行
+	o 当前行下一行插入一行
+	y 复制
+	t 粘贴
+
+seq 9
+
+
 	
 	
 		
