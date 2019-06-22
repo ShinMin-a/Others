@@ -1,0 +1,30 @@
+Nmap scan report for 192.168.10.1
+
+80/tcp closed http
+MAC Address: 0C:4B:54:5E:EE:A4 (Tp-link Technologies)
+
+Nmap scan report for 192.168.10.1
+
+53/tcp open  domain  (generic dns response: NOTIMP)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.70%I=7%D=6/22%Time=5D0E092E%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,20,"\0\x1e\0\x06\x81\x84\0\x01\0\0\0\0\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03")%r(DNSStatusRequestTCP,E,"\0\x0c\0\0\x90\x84\0\0
+SF:\0\0\0\0\0\0");
+MAC Address: 0C:4B:54:5E:EE:A4 (Tp-link Technologies)
+
+Nmap scan report for 192.168.10.1
+
+22/tcp closed ssh
+MAC Address: 0C:4B:54:5E:EE:A4 (Tp-link Technologies)
+
+Nmap scan report for 192.168.10.1
+
+23/tcp closed telnet
+MAC Address: 0C:4B:54:5E:EE:A4 (Tp-link Technologies)
+
+Nmap scan report for 192.168.10.2
+
+80/tcp open  http    Hikvision Network Video Recorder http admin
+MAC Address: B4:A3:82:BF:80:90 (Hangzhou Hikvision Digital Technology)
+

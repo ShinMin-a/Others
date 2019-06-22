@@ -67,4 +67,8 @@ echo:
 	-n 忽略结尾的换行
 		echo -e -n "hello\tworld"
 			- hello	world【此行接着就是提示符】
+
+
+if判断：
+	中括号的前后都有空格
 	
