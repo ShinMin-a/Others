@@ -196,6 +196,17 @@ vi 使用：
 
 seq 9
 
+查看各个网卡的网关：
+	netstat -nr
+
+添加默认网关：
+	route add default gw 192.168.1.1
+
+编辑DNS服务器：
+	vi /etc/resolv.conf
+
+编辑网卡设置：
+	vi /etc/network/interfaces
 
 	
 	
