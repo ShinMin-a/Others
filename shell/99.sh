@@ -1,9 +1,9 @@
 #! /bin/bash
-for n in 'seq 9'
+for n in `seq 9`
 do
- for m in 'seq $n'
+ for m in `seq $n`
    do
-     echo -n "$m*$n=" 'expr $n \* $n'
+     echo -n "$m*$n="
    done
  echo
 done
