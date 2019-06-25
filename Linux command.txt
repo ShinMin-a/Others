@@ -208,6 +208,11 @@ seq 9
 编辑网卡设置：
 	vi /etc/network/interfaces
 
+别名：
+	查看别名：alias
+	删除别名：unalias
+
+
 	
 	
 		
