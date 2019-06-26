@@ -212,8 +212,8 @@ seq 9
 	查看别名：alias
 	删除别名：unalias
 
-
-	
-	
-		
+curl:
+	curl www.google.com
+	curl -v www.google.com 可以查看响应头
+			
 
