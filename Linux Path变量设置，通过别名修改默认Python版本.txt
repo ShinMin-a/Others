@@ -1,0 +1,27 @@
+https://blog.csdn.net/zhangxinyu11021130/article/details/64125058
+https://www.computerhope.com/issues/ch001647.htm
+
+修改PATH变量，别名alias的一个办法，永久有效，不是临时的：
+	直接修改~/.bashrc文件，一个Home目录的隐藏文件，直接在最后添加：
+	PATH变量：
+		export PATH=/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/anaconda3/bin:/root/pycharm-community-anaconda-2019.1.3/bin
+	通过别名修改默认的Python版本：
+		alias python2="/usr/bin/python2.7"
+		alias python="/root/anaconda3/bin/python3.7"
+
+查看PATH：
+	echo $PATH
+
+其它--以下命令都可以通过上面的办法解决：
+
+	不小行破坏了PATH变量，很多命令用不了：
+		export PATH=/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+
+	末尾添加：
+	PATH=$PATH:/my/new/path
+
+	头部添加：
+	PATH=/my/new/path:$PATH
+
+	

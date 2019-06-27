@@ -180,9 +180,6 @@ netstat
 netstat -pantu
 netstat -pantu | egrep -v '0.0.0.0|:::|127.0.0.1' | awk '{print $5}' | egrep -v 'and|Address' | cut -d ':' -f 1 | sort | uniq > ip.txt
 
-> 覆盖
->> 追加
-
 find / -name nmap 从根目录开始查找
 find / -iname nmap 区分大小写
 
@@ -208,7 +205,6 @@ seq 9
 编辑网卡设置：
 	vi /etc/network/interfaces
 
-
 ip addr show
 ip addr show wlan0
 
@@ -229,6 +225,10 @@ Linux笔记本挂起后导致触摸板没反应失灵:
 	禁用触摸板： rmmod psmouse
 	启用触摸板： modprobe psmouse
 
+别名：
+	查看别名：alias
+	删除别名：unalias
 
-		
-
+curl:
+	curl www.google.com
+	curl -v www.google.com 可以查看响应头

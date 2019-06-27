@@ -71,4 +71,16 @@ echo:
 
 if判断：
 	中括号的前后都有空格
+
+printf:
+	输出默认没有换行
+	temp="hello,world"
+	printf $temp
+	printf "%s\n" $temp
+
+read:
+	读取换行符前的所有内容
+
+
+
 	
