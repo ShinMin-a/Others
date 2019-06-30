@@ -57,6 +57,7 @@ centos:
 		/etc/init.d/network restart
 		service network restart
 		service network-manager restart
+		systemctl restart network-manager
 		systemctl restart network
 	
 	Centos 7+防火墙：
@@ -232,3 +233,8 @@ Linux笔记本挂起后导致触摸板没反应失灵:
 curl:
 	curl www.google.com
 	curl -v www.google.com 可以查看响应头
+	
+时间设置：
+	v2ray中时间不对也无法正常翻墙
+	date -R
+	date --set="1989-06-04 05:00:00"
