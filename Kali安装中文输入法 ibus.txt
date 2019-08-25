@@ -1,6 +1,0 @@
-https://blog.csdn.net/singleyellow/article/details/80166675
-
-apt install ibus-pinyin
-im-config
-ibus-setup
-reboot

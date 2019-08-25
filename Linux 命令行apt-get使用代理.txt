@@ -1,3 +1,0 @@
-apt-get -o Acquire::http::proxy="http://127.0.0.1:8118/" update && apt install sublime-text
-
-vi /etc/apt/apt.conf

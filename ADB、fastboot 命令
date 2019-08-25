@@ -1,5 +1,0 @@
-fastboot -w 恢复出厂设置
-fastboot reboot 重启
-fastboot devices
-fastboot flash recovery xxx.img
-

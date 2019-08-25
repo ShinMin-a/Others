@@ -1,7 +1,0 @@
-用文本编辑器编辑/etc/apt/sources.list
-
-deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib 
-deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-
-apt-get update
-
